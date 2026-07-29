@@ -600,14 +600,14 @@
 					</div>
 					<div class="col-md-12 authors-corp-inner">
 						<div class="col-md-4 authors-corp-main">
-							<div class="authors-corp-img"><img src="images/vv.png" alt=">ВИКТОР ВЯТКИН" title=">ВИКТОР ВЯТКИН" /></div>
+							<div class="authors-corp-img"><img src="images/vv.png" alt="Виктор Вяткин" /></div>
 							<div class="authors-corp-text">
 								<h4>ВИКТОР ВЯТКИН</h4>
 								<p>генеральный директор<br>«3В Консалтинг»</p>
 							</div>
 						</div>
 						<div class="col-md-4 authors-corp-main">
-							<div class="authors-corp-img"><img src="images/dh.png" alt="" title="" /></div>
+							<div class="authors-corp-img"><img src="images/dh.png" alt="Денис Хадеев" /></div>
 							<div class="authors-corp-text">
 								<h4>ДЕНИС ХАДЕЕВ</h4>
 								<p>27 лет банковского стажа</p>
@@ -634,7 +634,7 @@
 									<div class="col-md-12 swiper-blk">
 										<div class="swiper-blk-bgr">
 											<div class="col-md-12 swiper-author">
-												<div class="col-md-3 swiper-author-img"><img src="images/review.png" alt=">ВИКТОР ВЯТКИН" title="ВИКТОР ВЯТКИН" /></div>
+												<div class="col-md-3 swiper-author-img"><img src="images/review.png" alt="" /></div>
 												<div class="col-md-9 swiper-author-name">Ирина Геннадьевна</div>
 											</div>										
 											<div class="col-md-12 swiper-author-review">“Участвовала в подобном мероприятии впервые. Очень понравилось. Интересная и познавательная зарядка для ума. Выступление команд, с учетом поставленных интересов дополняли вводные данные и открывали новые видения на ситуацию. Мнение эксперта в конце подвело итоговую завершающую черту, позволило сделать выводы, и увидеть недоработки и упущения. С учетом данного опыта, в подобной ситуации действовали бы по другой схеме 
@@ -651,7 +651,7 @@
 									<div class="col-md-12 swiper-blk">
 										<div class="swiper-blk-bgr">
 											<div class="col-md-12 swiper-author">
-												<div class="col-md-3 swiper-author-img"><img src="images/review.png" alt=">ВИКТОР ВЯТКИН" title="ВИКТОР ВЯТКИН" /></div>
+												<div class="col-md-3 swiper-author-img"><img src="images/review.png" alt="" /></div>
 												<div class="col-md-9 swiper-author-name">Галина Мартынова</div>
 											</div>										
 											<div class="col-md-12 swiper-author-review">“Никто не знает - как управлять компанией. Но многие хотят этому научиться. В идеале - не на своих ошибках.
@@ -665,7 +665,7 @@
 									<div class="col-md-12 swiper-blk">
 										<div class="swiper-blk-bgr">
 											<div class="col-md-12 swiper-author">
-												<div class="col-md-3 swiper-author-img"><img src="images/review.png" alt=">ВИКТОР ВЯТКИН" title="ВИКТОР ВЯТКИН" /></div>
+												<div class="col-md-3 swiper-author-img"><img src="images/review.png" alt="" /></div>
 												<div class="col-md-9 swiper-author-name">Абайдулина Ирина</div>
 											</div>										
 											<div class="col-md-12 swiper-author-review">Предлагаю такие игры на коммерческий уровень перевести. Такой опыт и информация однозначно ценны для думающих и стремящихся к развитию людей</div>
@@ -681,7 +681,7 @@
 				<div class='marquee' style='overflow:hidden'>ПРОЧНОСТЬ СИСТЕМЫ ОПРЕДЕЛЯЕТСЯ ПРОЧНОСТЬЮ САМОГО СЛАБОГО ЭЛЕМЕНТА</div>
 			</div>
 			<div class="col-md-12 press-cont">
-				<div class="col-md-6 product-blk"><a href="/products.php" class="press_btn">ПРОДУКТЫ</a></div>
-				<div class="col-md-6 press-blk"><a href="/press-center.php" class="press_btn_outline">ПРЕСС-ЦЕНТР</a></div>
+				<div class="col-md-6 product-blk"><a href="/products" class="press_btn">ПРОДУКТЫ</a></div>
+				<div class="col-md-6 press-blk"><a href="/press-center" class="press_btn_outline">ПРЕСС-ЦЕНТР</a></div>
 			</div>
 <?php include("footer.php"); ?>

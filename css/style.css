@@ -558,6 +558,681 @@ img {
 	}
 }
 
+/* Home page
+   The original page mixed a full-frame Figma export, Bootstrap columns and
+   fixed offsets. These rules make the real content follow the Figma layout. */
+.page-home {
+	--home-brown: #684d39;
+	--home-accent: #a3764d;
+	--home-paper: #fffaf0;
+	--home-white: rgba(255,255,255,.94);
+	--home-line: rgba(104,77,57,.78);
+	--home-radius: 30px;
+	--home-section-gap: clamp(68px,7vw,104px);
+	background-color: var(--home-paper);
+}
+
+.page-home .container-main {
+	isolation: isolate;
+}
+
+.page-home .head,
+.page-home .sbmt_blk,
+.page-home .corp_men_blk,
+.page-home .instr-blk,
+.page-home .bis-cont,
+.page-home .press-cont,
+.page-home .footers {
+	width: 100%;
+}
+
+.page-home .head {
+	padding-top: clamp(24px,2.9vw,41px);
+}
+
+.page-home .sbmt_blk {
+	position: relative;
+	min-height: clamp(600px,51.4vw,730px);
+}
+
+.page-home .sbmt_img {
+	position: absolute;
+	z-index: -1;
+	width: min(75.42vw,1071px);
+	height: min(54.15vw,769px);
+	margin: clamp(70px,8.3vw,118px) 0 0 clamp(-17px,-1.2vw,-8px);
+	background-size: contain;
+	background-position: left top;
+}
+
+.page-home .sbmt_h1,
+.page-home .sbmt_p,
+.page-home .sbmt_btn {
+	z-index: 1;
+}
+
+.page-home .sbmt_h1 h1,
+.page-home .corp-main h2,
+.page-home .instr-blk-h3 h3,
+.page-home .bis-inner h3 {
+	color: var(--home-brown);
+	letter-spacing: -.025em;
+}
+
+.page-home .sbmt_btn,
+.page-home .btn-sbmt,
+.page-home .bis_btn,
+.page-home .bis_btn_outline {
+	transition: background-color .2s ease,color .2s ease,border-color .2s ease,transform .2s ease;
+}
+
+.page-home .sbmt_btn:hover,
+.page-home .bis_btn:hover {
+	background: #7b5b43;
+	transform: translateY(-1px);
+}
+
+.page-home .btn-sbmt:focus-visible,
+.page-home .bis_btn:focus-visible,
+.page-home .bis_btn_outline:focus-visible,
+.page-home .press_btn:focus-visible,
+.page-home .press_btn_outline:focus-visible,
+.page-home .btn-corp-brw:focus-visible,
+.page-home .btn-corp-wht:focus-visible {
+	outline: 3px solid rgba(163,118,77,.45);
+	outline-offset: 4px;
+}
+
+.page-home .skb-marquee {
+	display: flex;
+	align-items: center;
+	width: calc(100% + 2 * clamp(32px,4.6vw,65px));
+	height: 64px;
+	margin-inline: calc(-1 * clamp(32px,4.6vw,65px));
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.page-home .marquee {
+	width: 100%;
+	color: rgba(104,77,57,.46);
+	font-size: clamp(23px,2.1vw,30px);
+	line-height: 1;
+	letter-spacing: -.025em;
+}
+
+.page-home .corp_men_blk {
+	height: auto;
+	min-height: 788px;
+	padding: clamp(60px,5.7vw,82px) 0 clamp(54px,5vw,72px);
+}
+
+.page-home .corp_men_blk > .corp-main {
+	padding: 0;
+	text-align: left;
+}
+
+.page-home .corp-main h2 {
+	margin: 0;
+	font-size: clamp(34px,3vw,42px);
+	line-height: 1.12;
+}
+
+.page-home .corp_men_blk > .corp-main p {
+	max-width: 780px;
+	margin: 0;
+	padding-top: 34px;
+	font-size: clamp(18px,1.4vw,20px);
+	line-height: 1.45;
+}
+
+.page-home .corp-inner {
+	display: grid;
+	grid-template-columns: minmax(300px,348px) minmax(0,1fr);
+	align-items: start;
+	gap: clamp(42px,6vw,86px);
+	padding-top: 52px;
+}
+
+.page-home .corp-inner > [class*="col-"],
+.page-home .instr-blk-main > [class*="col-"],
+.page-home .authors-corp-inner > [class*="col-"],
+.page-home .bis-cont [class*="col-"],
+.page-home .press-cont > [class*="col-"],
+.page-home .footer-cont-menu > [class*="col-"] {
+	width: auto;
+	max-width: none;
+	padding-inline: 0;
+}
+
+.page-home .accordion,
+.page-home .accordion-item,
+.page-home .accordion-button {
+	background: transparent;
+}
+
+.page-home .accordion-item {
+	border: 0;
+}
+
+.page-home .accordion-button::after {
+	display: none;
+}
+
+.page-home .btn-corp-brw,
+.page-home .btn-corp-wht,
+.page-home .wht-big {
+	width: 100%;
+	min-height: 45px;
+	height: auto;
+	align-items: center;
+	justify-content: space-between;
+	padding: 9px 18px;
+	line-height: 1.25;
+}
+
+.page-home .btn-corp-brw {
+	background: var(--home-brown);
+	color: #fff;
+}
+
+.page-home .btn-corp-wht,
+.page-home .wht-big {
+	background: transparent;
+	color: var(--home-brown);
+}
+
+.page-home .btn-corp-wht .fa-chevron-right,
+.page-home .accordion-collapse .fa-chevron-right {
+	position: static;
+	float: none;
+	margin: 0 0 0 auto;
+}
+
+.page-home .corp-blk {
+	min-width: 0;
+}
+
+.page-home .corp-blk > [id^="collapse-"] {
+	align-items: center;
+	min-height: 430px;
+}
+
+.page-home .corp-blk > [id^="collapse-"] > .corp-main {
+	padding: 20px 0 20px 34px;
+	text-align: left;
+}
+
+.page-home .corp-blk-h3 h3 {
+	margin: 0 0 8px;
+	line-height: 1.2;
+}
+
+.page-home .corp-blk-text {
+	max-width: 520px;
+	line-height: 1.45;
+}
+
+.page-home .instr-blk {
+	padding: clamp(68px,6vw,86px) 0 clamp(60px,5vw,74px);
+}
+
+.page-home .instr-blk-h3 h3,
+.page-home .bis-inner h3 {
+	margin: 0;
+	font-size: clamp(34px,3vw,42px);
+	line-height: 1.12;
+}
+
+.page-home .instr-blk-main {
+	display: grid;
+	grid-template-columns: repeat(3,minmax(0,1fr));
+	gap: clamp(38px,5vw,72px);
+	padding: 34px 0 0;
+}
+
+.page-home .instr-1,
+.page-home .instr-2,
+.page-home .instr-3 {
+	padding: 0;
+}
+
+.page-home .instr-blk-01 {
+	margin: 0 0 18px;
+	color: var(--home-accent);
+	font-family: Georgia,"Times New Roman",serif;
+	font-size: clamp(54px,4.5vw,64px);
+	line-height: 1;
+}
+
+.page-home .instr-blk-text {
+	width: 100%;
+}
+
+.page-home .instr-blk-text h4 {
+	margin: 0;
+	padding: 16px 0;
+	font-size: clamp(17px,1.4vw,20px);
+	line-height: 1.28;
+}
+
+.page-home .instr-blk-text p,
+.page-home .instr-blk-text li {
+	font-size: clamp(17px,1.4vw,20px);
+	line-height: 1.45;
+}
+
+.page-home .instr-blk-text p {
+	margin: 0;
+	padding: 0 0 18px;
+}
+
+.page-home .authors-corp {
+	padding: 48px 0 0;
+}
+
+.page-home .authors-corp-blk {
+	font-size: 19px;
+	line-height: 1.35;
+}
+
+.page-home .authors-corp-inner {
+	display: grid;
+	grid-template-columns: repeat(2,minmax(0,430px));
+	gap: clamp(34px,5vw,70px);
+	padding-top: 24px;
+}
+
+.page-home .authors-corp-main {
+	display: grid;
+	grid-template-columns: 118px minmax(0,1fr);
+	align-items: center;
+	gap: 18px;
+}
+
+.page-home .authors-corp-img img {
+	width: 112px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.page-home .authors-corp-text {
+	padding: 0;
+}
+
+.page-home .authors-corp-main h4 {
+	margin: 0;
+	padding: 0 0 10px;
+	font-size: clamp(22px,2vw,28px);
+	line-height: 1.12;
+}
+
+.page-home .authors-corp-main p {
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.45;
+}
+
+.page-home .bis-cont {
+	padding: clamp(74px,6.3vw,90px) 0 clamp(68px,6vw,86px);
+}
+
+.page-home .bis-text {
+	max-width: 720px;
+	padding: 34px 0 0;
+	font-size: clamp(18px,1.4vw,20px);
+	line-height: 1.45;
+}
+
+.page-home .bis-btn-blk {
+	display: grid;
+	grid-template-columns: repeat(2,210px);
+	gap: 18px;
+	width: auto;
+	padding-top: 28px;
+}
+
+.page-home .bis-btn-blk > [class*="col-"] {
+	width: auto;
+}
+
+.page-home a.bis_btn,
+.page-home a.bis_btn_outline {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 210px;
+	min-height: 45px;
+	height: auto;
+	padding: 10px 16px;
+	line-height: 1.2;
+}
+
+.page-home .bis-prv {
+	padding: 64px 0 0;
+	font-size: clamp(18px,1.4vw,20px);
+	line-height: 1.4;
+}
+
+.page-home .swiper-cont {
+	margin: 34px 0 0;
+	overflow: hidden;
+}
+
+.page-home .sample-slider {
+	overflow: visible;
+}
+
+.page-home .swiper-wrapper {
+	align-items: stretch;
+}
+
+.page-home .swiper-slide {
+	height: auto;
+	padding: 0 18px;
+}
+
+.page-home .swiper-blk,
+.page-home .swiper-blk-bgr {
+	height: 100%;
+}
+
+.page-home .swiper-blk-bgr {
+	min-height: 430px;
+	padding: 34px 32px;
+	overflow: auto;
+	border: 1px solid rgba(104,77,57,.08);
+	border-radius: var(--home-radius);
+	background: var(--home-white);
+	box-shadow: 0 18px 42px rgba(104,77,57,.055);
+	scrollbar-width: thin;
+}
+
+.page-home .swiper-author {
+	display: grid;
+	grid-template-columns: 64px minmax(0,1fr);
+	align-items: center;
+	gap: 16px;
+}
+
+.page-home .swiper-author-img {
+	width: 64px;
+	height: 64px;
+}
+
+.page-home .swiper-author-img img {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.page-home .swiper-author-name {
+	width: auto;
+	padding: 0;
+	font-size: 18px;
+	line-height: 1.25;
+}
+
+.page-home .swiper-author-review {
+	padding: 26px 0 0;
+	font-size: 16px;
+	line-height: 1.38;
+	white-space: pre-line;
+}
+
+.page-home .press-cont {
+	display: grid;
+	grid-template-columns: repeat(2,minmax(0,1fr));
+	gap: clamp(36px,7vw,90px);
+	padding: 72px 0 78px;
+}
+
+.page-home .press_btn,
+.page-home .press_btn_outline {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: clamp(126px,10.6vw,150px);
+	border-radius: var(--home-radius);
+	font-size: clamp(30px,2.8vw,40px);
+	line-height: 1;
+	transition: transform .2s ease,box-shadow .2s ease,color .2s ease;
+}
+
+.page-home .press_btn_outline {
+	background: var(--home-white);
+}
+
+.page-home .press_btn:hover,
+.page-home .press_btn_outline:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 18px 38px rgba(104,77,57,.1);
+}
+
+.page-home .hr-line {
+	margin: 0;
+	padding-bottom: 76px;
+}
+
+.page-home .footers {
+	padding-bottom: 52px;
+}
+
+.page-home .footer-cont-menu {
+	display: grid;
+	grid-template-columns: repeat(3,minmax(0,1fr));
+	gap: clamp(34px,5vw,72px);
+}
+
+.page-home .footer-cont-blk h4 {
+	margin: 0;
+}
+
+.page-home .footer-cont-blk li {
+	line-height: 1.45;
+}
+
+@media only screen and (max-width: 901px) {
+	.page-home {
+		--home-section-gap: 58px;
+		background:
+			radial-gradient(circle at 18% 12%,rgba(239,201,112,.31),transparent 22%),
+			radial-gradient(circle at 88% 55%,rgba(239,201,112,.2),transparent 28%),
+			#fffaf0;
+	}
+
+	.page-home .sbmt_blk {
+		display: flex;
+		flex-direction: column;
+		min-height: 0;
+		padding: 24px 18px 58px;
+	}
+
+	.page-home .sbmt_img {
+		position: relative;
+		order: 1;
+		z-index: 0;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 1.27;
+		margin: 0;
+		background-size: contain;
+		background-position: center;
+	}
+
+	.page-home .sbmt_h1 {
+		order: 2;
+		margin-top: 34px;
+		padding-inline: 0;
+	}
+
+	.page-home .sbmt_p {
+		order: 3;
+		padding: 22px 6px;
+	}
+
+	.page-home .sbmt_btn {
+		order: 4;
+	}
+
+	.page-home .skb-marquee {
+		width: 100%;
+		margin-inline: 0;
+	}
+
+	.page-home .corp_men_blk {
+		min-height: 0;
+		padding: 58px 18px 62px;
+	}
+
+	.page-home .corp_men_blk > .corp-main {
+		padding: 0;
+		text-align: center;
+	}
+
+	.page-home .corp_men_blk > .corp-main p {
+		padding: 24px 14px 0;
+	}
+
+	.page-home .corp-inner {
+		display: block;
+		padding-top: 40px;
+	}
+
+	.page-home .corp-inner .mbl-blk {
+		width: 100%;
+	}
+
+	.page-home .collapse-mbl {
+		padding: 8px 0 20px;
+	}
+
+	.page-home .collapse-mbl .corp-main {
+		padding: 22px 10px;
+		text-align: center;
+	}
+
+	.page-home .instr-blk {
+		padding: 58px 20px 64px;
+	}
+
+	.page-home .instr-blk-h3 {
+		text-align: left;
+	}
+
+	.page-home .instr-blk-main {
+		grid-template-columns: 1fr;
+		gap: 38px;
+		padding-top: 30px;
+	}
+
+	.page-home .instr-blk-01 {
+		margin-bottom: 6px;
+	}
+
+	.page-home .instr-blk-text h4 {
+		padding: 12px 0;
+	}
+
+	.page-home .authors-corp {
+		padding-top: 38px;
+	}
+
+	.page-home .authors-corp-inner {
+		grid-template-columns: 1fr;
+		gap: 28px;
+	}
+
+	.page-home .authors-corp-main {
+		grid-template-columns: 96px minmax(0,1fr);
+	}
+
+	.page-home .authors-corp-img img {
+		width: 92px;
+	}
+
+	.page-home .bis-cont {
+		padding: 62px 20px 68px;
+	}
+
+	.page-home .bis-inner,
+	.page-home .bis-text,
+	.page-home .bis-prv {
+		text-align: left;
+	}
+
+	.page-home .bis-btn-blk {
+		grid-template-columns: 1fr;
+		width: 100%;
+		max-width: 320px;
+	}
+
+	.page-home .bis-btn-blk > [class*="col-"],
+	.page-home a.bis_btn,
+	.page-home a.bis_btn_outline {
+		width: 100%;
+	}
+
+	.page-home .bis-prv {
+		padding-top: 52px;
+	}
+
+	.page-home .swiper-slide {
+		padding-inline: 8px;
+	}
+
+	.page-home .swiper-blk-bgr {
+		min-height: 390px;
+		padding: 28px 24px;
+	}
+
+	.page-home .press-cont {
+		grid-template-columns: 1fr;
+		gap: 18px;
+		padding: 58px 20px 64px;
+	}
+
+	.page-home .press_btn,
+	.page-home .press_btn_outline {
+		height: 74px;
+		margin: 0;
+		font-size: 24px;
+	}
+
+	.page-home .footer-cont-menu {
+		grid-template-columns: 1fr;
+		gap: 14px;
+	}
+
+	.page-home .hr-line {
+		margin-inline: 20px;
+		padding-bottom: 46px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.page-home .sbmt_h1 h1 {
+		font-size: clamp(40px,12vw,52px);
+	}
+
+	.page-home .corp-main h2,
+	.page-home .instr-blk-h3 h3,
+	.page-home .bis-inner h3 {
+		font-size: 32px;
+	}
+
+	.page-home .marquee {
+		font-size: 22px;
+	}
+
+	.page-home .authors-corp-main h4 {
+		font-size: 22px;
+	}
+}
+
 /* Inner pages follow the compact Figma header and card grid. */
 .page-inner .content-main {
 	padding-inline: clamp(24px, 3vw, 42px);
