@@ -820,33 +820,80 @@ img {
 .page-home .corp-blk .internal_organs_img {
 	max-width: 100%;
 	margin: 0 auto;
+	transform: none;
 	background-position: center;
 	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-.page-home .corp-blk .blood_img {width:260px;height:300px;}
-.page-home .corp-blk .skull_img {width:200px;height:240px;}
-.page-home .corp-blk .paw_img {width:280px;height:360px;}
-.page-home .corp-blk .bone_img {width:280px;height:360px;}
-.page-home .corp-blk .nervous_system_img {width:280px;height:310px;}
-.page-home .corp-blk .brain_img {width:190px;height:180px;}
-.page-home .corp-blk .director_img {width:240px;height:250px;}
-.page-home .corp-blk .committees_img {width:200px;height:220px;}
-.page-home .corp-blk .ku_img {width:250px;height:390px;}
-.page-home .corp-blk .internal_organs_img {width:260px;height:220px;}
-.page-home .corp-blk .blood_img {transform:scale(1.15);}
-.page-home .corp-blk .paw_img,
-.page-home .corp-blk .bone_img,
-.page-home .corp-blk .nervous_system_img {transform:scale(1.35);}
-.page-home .corp-blk .ku_img {transform:translateY(55px) scale(1.6);}
-.page-home .corp-blk .internal_organs_img {transform:scale(1.05);}
-.page-home .corp-blk .blood_img,
-.page-home .corp-blk .paw_img,
-.page-home .corp-blk .bone_img,
-.page-home .corp-blk .nervous_system_img,
-.page-home .corp-blk .ku_img,
+.page-home .corp-blk > [id^="collapse-"]:not(#collapse-0):not(#collapse-11) > :first-child {
+	position: relative;
+	display: grid;
+	place-items: center;
+	width: 250px;
+	height: 430px;
+}
+
+/* Individual Figma artwork boxes. The source SVGs contain transparent
+   margins, so each card needs its own box and offset. */
+.page-home .corp-blk .blood_img {
+	width: 300px;
+	height: 258px;
+	transform: translateX(-72px);
+}
+
+.page-home .corp-blk .skull_img {
+	width: 185px;
+	height: 235px;
+	transform: translateX(-4px);
+}
+
+.page-home .corp-blk .paw_img {
+	width: 304px;
+	height: 429px;
+	transform: translate(-55px,-18px);
+}
+
+.page-home .corp-blk .nervous_system_img {
+	width: 375px;
+	height: 287px;
+	transform: translateX(-118px);
+}
+
+.page-home .corp-blk .bone_img {
+	width: 342px;
+	height: 468px;
+	transform: translate(-48px,-22px);
+}
+
+.page-home .corp-blk .brain_img {
+	width: 187px;
+	height: 132px;
+	transform: translateX(-2px);
+}
+
+.page-home .corp-blk .director_img {
+	width: 210px;
+	height: 210px;
+	transform: translateX(-4px);
+}
+
+.page-home .corp-blk .committees_img {
+	width: 185px;
+	height: 185px;
+	transform: translateX(-2px);
+}
+
+.page-home .corp-blk .ku_img {
+	width: 438px;
+	height: 572px;
+	transform: translate(-110px,14px);
+}
+
 .page-home .corp-blk .internal_organs_img {
-	transform-origin: center;
+	width: 265px;
+	height: 194px;
+	transform: translateX(-24px);
 }
 .page-home .corp-blk .k_u_img {
 	width: min(100%,647px);

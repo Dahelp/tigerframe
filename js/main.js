@@ -1,45 +1,75 @@
 $(document).ready(function(){
-    const pageWidth = window.innerWidth;
-	if(pageWidth < 900) {
-		$('.corp-blk').hide();
-		$('#collapse-mbl-0').show();
+	const desktopBreakpoint = 902;
+	let activePanelId = 0;
+	let desktopMode = window.innerWidth >= desktopBreakpoint;
+	let resizeTimer;
 
-		$('#accordionFlushExample a').each(function(){
-			$(this).click(function(){				
-				$('.collapse-mbl').hide();
-				$('#collapse-mbl-'+$(this).data("id")).css('display','block').show();
-				return false;
-			});
+	const $desktopPanels = $('.corp-blk > [id^="collapse-"]');
+	const $mobilePanels = $('.collapse-mbl');
+	const $cardLinks = $('#accordionFlushExample .btn-corp-wht');
+
+	function markActiveControl(id) {
+		$cardLinks.each(function(){
+			const active = Number($(this).data('id')) === Number(id);
+			$(this).parent('li').toggleClass('active', active);
+			if (active) {
+				$(this).attr('aria-current', 'true');
+			} else {
+				$(this).removeAttr('aria-current');
+			}
 		});
-		
-	}else{ //default setup
-		const showDesktopPanel = function(id) {
-			const $panel = $('#collapse-' + id);
-			$panel.siblings('div').hide();
-			$panel.css('display', $panel.children().length > 1 ? 'grid' : 'block').show();
-		};
+	}
 
-		showDesktopPanel(0);
-		$('#collapse-0').siblings('div').hide();
-		$('#collapse-mbl-0').hide();
+	function showDesktopPanel(id) {
+		const $panel = $('#collapse-' + id);
+		if (!$panel.length) return;
 
-		$('#accordionFlushExample .btn-corp-brw').each(function(){
-			$(this).click(function(){
-				const id = $(this).data('id');
-				$('#accordionFlushExample li').removeClass('active');
-				showDesktopPanel(id);
-			});
-		});
+		$desktopPanels.hide().attr('aria-hidden', 'true');
+		$panel
+			.css('display', $panel.children().length > 1 ? 'grid' : 'block')
+			.attr('aria-hidden', 'false');
+		markActiveControl(id);
+	}
 
-		$('#accordionFlushExample a').each(function(){
-			$(this).click(function(){
-				$(this).parent('li').addClass("active");
-				$(this).parent('li').siblings('li').removeClass('active');
-				showDesktopPanel($(this).data("id"));
-				return false;
-			});
-		});	
-    }
+	function showMobilePanel(id) {
+		const $panel = $('#collapse-mbl-' + id);
+		if (!$panel.length) return;
+
+		$mobilePanels.hide().attr('aria-hidden', 'true');
+		$panel.show().attr('aria-hidden', 'false');
+		markActiveControl(id);
+	}
+
+	function renderActivePanel() {
+		desktopMode = window.innerWidth >= desktopBreakpoint;
+		$('.corp-blk').toggle(desktopMode);
+
+		if (desktopMode) {
+			$mobilePanels.hide().attr('aria-hidden', 'true');
+			showDesktopPanel(activePanelId);
+		} else {
+			$desktopPanels.hide().attr('aria-hidden', 'true');
+			showMobilePanel(activePanelId);
+		}
+	}
+
+	$('#accordionFlushExample').on('click', '.btn-corp-wht', function(event){
+		event.preventDefault();
+		activePanelId = Number($(this).data('id'));
+		renderActivePanel();
+	});
+
+	$('#accordionFlushExample').on('click', '.btn-corp-brw', function(){
+		activePanelId = Number($(this).data('id'));
+		renderActivePanel();
+	});
+
+	$(window).on('resize', function(){
+		window.clearTimeout(resizeTimer);
+		resizeTimer = window.setTimeout(renderActivePanel, 120);
+	});
+
+	renderActivePanel();
 });
 
 
