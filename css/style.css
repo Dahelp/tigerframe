@@ -564,7 +564,7 @@ img {
 .page-home {
 	--home-brown: #684d39;
 	--home-accent: #a3764d;
-	--home-paper: #fffaf0;
+	--home-paper: #fff;
 	--home-white: rgba(255,255,255,.94);
 	--home-line: rgba(104,77,57,.78);
 	--home-radius: 30px;
@@ -572,7 +572,34 @@ img {
 	background-color: var(--home-paper);
 }
 
+.page-home .tiger-main {
+	isolation: isolate;
+}
+
+.page-home .tiger-main::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	pointer-events: none;
+	background-image:
+		url("../images/ellipse_13.svg"),
+		url("../images/ellipse_14.svg"),
+		url("../images/ellipse_15.svg");
+	background-repeat: no-repeat;
+	background-position:
+		center top,
+		right 1194px,
+		calc(50% - 1171px) 3003px;
+	background-size:
+		1420px 1493px,
+		1420px 1914px,
+		1420px 1727px;
+}
+
 .page-home .container-main {
+	position: relative;
+	z-index: 1;
 	isolation: isolate;
 }
 
@@ -668,7 +695,7 @@ img {
 }
 
 .page-home .corp_men_blk > .corp-main {
-	padding: 0;
+	padding: 0 clamp(0px,2.5vw,35px);
 	text-align: left;
 }
 
@@ -690,8 +717,8 @@ img {
 	display: grid;
 	grid-template-columns: minmax(300px,348px) minmax(0,1fr);
 	align-items: start;
-	gap: clamp(42px,6vw,86px);
-	padding-top: 52px;
+	gap: clamp(72px,7.4vw,105px);
+	padding: 52px clamp(0px,2.5vw,35px) 0;
 }
 
 .page-home .corp-inner > [class*="col-"],
@@ -758,9 +785,69 @@ img {
 	min-height: 430px;
 }
 
+.page-home .corp-blk > [id^="collapse-"]:not(#collapse-0):not(#collapse-11) {
+	grid-template-columns: minmax(210px,250px) minmax(0,1fr);
+	gap: clamp(22px,2vw,28px);
+}
+
+.page-home .corp-blk > [id^="collapse-"] > [class*="col-"] {
+	width: auto;
+	max-width: none;
+	padding: 0;
+}
+
 .page-home .corp-blk > [id^="collapse-"] > .corp-main {
-	padding: 20px 0 20px 34px;
+	padding: 20px 0;
 	text-align: left;
+}
+
+.page-home .corp-blk #collapse-0 > div,
+.page-home .corp-blk #collapse-11 > div {
+	display: grid;
+	place-items: center;
+	min-height: 430px;
+}
+
+.page-home .corp-blk .f_e_img {
+	width: min(100%,603px);
+	height: 425px;
+	margin: 0 auto;
+	background-position: center;
+	background-size: contain;
+}
+
+.page-home .corp-blk .blood_img,
+.page-home .corp-blk .skull_img,
+.page-home .corp-blk .paw_img,
+.page-home .corp-blk .bone_img,
+.page-home .corp-blk .nervous_system_img,
+.page-home .corp-blk .brain_img,
+.page-home .corp-blk .director_img,
+.page-home .corp-blk .committees_img,
+.page-home .corp-blk .ku_img,
+.page-home .corp-blk .internal_organs_img {
+	max-width: 100%;
+	margin: 0 auto;
+	background-position: center;
+	background-size: contain;
+}
+
+.page-home .corp-blk .blood_img {width:260px;height:300px;}
+.page-home .corp-blk .skull_img {width:200px;height:240px;}
+.page-home .corp-blk .paw_img {width:280px;height:360px;}
+.page-home .corp-blk .bone_img {width:280px;height:360px;}
+.page-home .corp-blk .nervous_system_img {width:280px;height:310px;}
+.page-home .corp-blk .brain_img {width:190px;height:180px;}
+.page-home .corp-blk .director_img {width:240px;height:250px;}
+.page-home .corp-blk .committees_img {width:200px;height:220px;}
+.page-home .corp-blk .ku_img {width:250px;height:390px;}
+.page-home .corp-blk .internal_organs_img {width:260px;height:220px;}
+.page-home .corp-blk .k_u_img {
+	width: min(100%,647px);
+	height: 356px;
+	margin: 0 auto;
+	background-position: center;
+	background-size: contain;
 }
 
 .page-home .corp-blk-h3 h3 {
@@ -1042,6 +1129,10 @@ img {
 			radial-gradient(circle at 18% 12%,rgba(239,201,112,.31),transparent 22%),
 			radial-gradient(circle at 88% 55%,rgba(239,201,112,.2),transparent 28%),
 			#fffaf0;
+	}
+
+	.page-home .tiger-main::before {
+		display: none;
 	}
 
 	.page-home .sbmt_blk {
