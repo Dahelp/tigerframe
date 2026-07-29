@@ -1,6 +1,7 @@
 <?php
 	$title="Скелет бизнеса: модель тигра";
 	$description="Скелет бизнеса: модель тигра";
+	$pageClass="page-home";
 	
 	include("header.php"); 
 ?>
@@ -8,12 +9,12 @@
 				<div class="sbmt_img"></div>		
 				<div class="sbmt_h1"><h1>Скелет бизнеса: модель тигра</h1></div>
 				<div class="sbmt_p">Скелет бизнеса приносит пользу и дает устойчивость компаниям любого размера</div>
-				<div class="sbmt_btn"><a href="" class="btn-sbmt">Принять участие в игре</a></div>
+				<div class="sbmt_btn"><a href="/business-games" class="btn-sbmt">Принять участие в игре</a></div>
 			</div>			
 			<div class="col-md-12 skb-marquee">
 				<div class='marquee' style='overflow:hidden'>БЕЗ СКЕЛЕТА ДОЛГО НЕ ЖИВУТ БИЗНЕСЫ МАСШТАБНЕЕ ИЛИ СЛОЖНЕЕ, ЧЕМ ПЕРВОБЫТНОЕ ПЛЕМЯ</div>
 			</div>
-			<div class="corp_men_blk">
+			<div id="corporate-governance" class="corp_men_blk">
 				<div class="corp-main">
 					<h2>КОРПОРАТИВНОЕ УПРАВЛЕНИЕ</h2>
 					<p>Несущая конструкция системы управления и риск-менеджмента бизнеса</p>
@@ -23,9 +24,9 @@
 						<div class="accordion accordion-flush" id="accordionFlushExample">
 						  <div id="flush-collapse" class="accordion-item">
 							<h2 class="accordion-header" id="flush-headingOne">
-							  <a class="accordion-button btn-corp-brw flush-collapse-0" type="button" data-id="0" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+							  <button class="accordion-button btn-corp-brw flush-collapse-0" type="button" data-id="0" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
 								ФУНКЦИОНАЛЬНЫЕ ЭЛЕМЕНТЫ
-							  </a>
+							  </button>
 							</h2>
 							<!-- One-0 -->
 							<div id="collapse-mbl-0" class="collapse-mbl">
@@ -121,9 +122,9 @@
 						  </div>
 						  <div class="accordion-item">
 							<h2 class="accordion-header" id="flush-headingTwo">
-							  <a class="accordion-button collapsed btn-corp-brw flush-collapse-6" type="button" data-id="6" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+							  <button class="accordion-button collapsed btn-corp-brw flush-collapse-6" type="button" data-id="6" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
 								ДОКУМЕНТИРОВАНИЕ
-							  </a>
+							  </button>
 							</h2>
 							<!-- One-6 -->
 							<div id="collapse-mbl-6" class="collapse-mbl" style="display:none">
@@ -213,9 +214,9 @@
 						  </div>
 						  <div class="accordion-item">
 							<h2 class="accordion-header" id="flush-headingThree">
-							  <a class="accordion-button collapsed btn-corp-brw flush-collapse-11" type="button" data-id="11" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+							  <button class="accordion-button collapsed btn-corp-brw flush-collapse-11" type="button" data-id="11" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
 								СТРУКТУРНЫЕ ЭЛЕМЕНТЫ
-							  </a>
+							  </button>
 							</h2>
 							<!-- One-11 -->
 							<div id="collapse-mbl-11" class="collapse-mbl" style="display:none">
@@ -599,14 +600,14 @@
 					</div>
 					<div class="col-md-12 authors-corp-inner">
 						<div class="col-md-4 authors-corp-main">
-							<div class="authors-corp-img"><img src="images/vv.png" alt=">ВИКТОР ВЯТКИН" title=">ВИКТОР ВЯТКИН" /></div>
+							<div class="authors-corp-img"><img src="images/vv.png" alt="Виктор Вяткин" /></div>
 							<div class="authors-corp-text">
 								<h4>ВИКТОР ВЯТКИН</h4>
 								<p>генеральный директор<br>«3В Консалтинг»</p>
 							</div>
 						</div>
 						<div class="col-md-4 authors-corp-main">
-							<div class="authors-corp-img"><img src="images/dh.png" alt="" title="" /></div>
+							<div class="authors-corp-img"><img src="images/dh.png" alt="Денис Хадеев" /></div>
 							<div class="authors-corp-text">
 								<h4>ДЕНИС ХАДЕЕВ</h4>
 								<p>27 лет банковского стажа</p>
@@ -633,7 +634,7 @@
 									<div class="col-md-12 swiper-blk">
 										<div class="swiper-blk-bgr">
 											<div class="col-md-12 swiper-author">
-												<div class="col-md-3 swiper-author-img"><img src="images/review.png" alt=">ВИКТОР ВЯТКИН" title="ВИКТОР ВЯТКИН" /></div>
+												<div class="col-md-3 swiper-author-img"><img src="images/review.png" alt="" /></div>
 												<div class="col-md-9 swiper-author-name">Ирина Геннадьевна</div>
 											</div>										
 											<div class="col-md-12 swiper-author-review">“Участвовала в подобном мероприятии впервые. Очень понравилось. Интересная и познавательная зарядка для ума. Выступление команд, с учетом поставленных интересов дополняли вводные данные и открывали новые видения на ситуацию. Мнение эксперта в конце подвело итоговую завершающую черту, позволило сделать выводы, и увидеть недоработки и упущения. С учетом данного опыта, в подобной ситуации действовали бы по другой схеме 
@@ -650,7 +651,7 @@
 									<div class="col-md-12 swiper-blk">
 										<div class="swiper-blk-bgr">
 											<div class="col-md-12 swiper-author">
-												<div class="col-md-3 swiper-author-img"><img src="images/review.png" alt=">ВИКТОР ВЯТКИН" title="ВИКТОР ВЯТКИН" /></div>
+												<div class="col-md-3 swiper-author-img"><img src="images/review.png" alt="" /></div>
 												<div class="col-md-9 swiper-author-name">Галина Мартынова</div>
 											</div>										
 											<div class="col-md-12 swiper-author-review">“Никто не знает - как управлять компанией. Но многие хотят этому научиться. В идеале - не на своих ошибках.
@@ -664,7 +665,7 @@
 									<div class="col-md-12 swiper-blk">
 										<div class="swiper-blk-bgr">
 											<div class="col-md-12 swiper-author">
-												<div class="col-md-3 swiper-author-img"><img src="images/review.png" alt=">ВИКТОР ВЯТКИН" title="ВИКТОР ВЯТКИН" /></div>
+												<div class="col-md-3 swiper-author-img"><img src="images/review.png" alt="" /></div>
 												<div class="col-md-9 swiper-author-name">Абайдулина Ирина</div>
 											</div>										
 											<div class="col-md-12 swiper-author-review">Предлагаю такие игры на коммерческий уровень перевести. Такой опыт и информация однозначно ценны для думающих и стремящихся к развитию людей</div>
@@ -680,7 +681,7 @@
 				<div class='marquee' style='overflow:hidden'>ПРОЧНОСТЬ СИСТЕМЫ ОПРЕДЕЛЯЕТСЯ ПРОЧНОСТЬЮ САМОГО СЛАБОГО ЭЛЕМЕНТА</div>
 			</div>
 			<div class="col-md-12 press-cont">
-				<div class="col-md-6 product-blk"><a href="/products.php" class="press_btn">ПРОДУКТЫ</a></div>
-				<div class="col-md-6 press-blk"><a href="/press-center.php" class="press_btn_outline">ПРЕСС-ЦЕНТР</a></div>
+				<div class="col-md-6 product-blk"><a href="/products" class="press_btn">ПРОДУКТЫ</a></div>
+				<div class="col-md-6 press-blk"><a href="/press-center" class="press_btn_outline">ПРЕСС-ЦЕНТР</a></div>
 			</div>
 <?php include("footer.php"); ?>
