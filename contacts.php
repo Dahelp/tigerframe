@@ -1,6 +1,7 @@
 <?php
-	$title="Пресс-центр";
-	$description="Пресс-центр";
+	$title="Контакты";
+	$description="Контакты проекта «Скелет бизнеса: модель тигра»";
+	$pageClass="page-contacts page-inner";
 	
 	include("header.php");
 ?>

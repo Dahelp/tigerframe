@@ -16,7 +16,7 @@
 	<meta name="description" content="<?=$description?>" />
 	<meta name="keywords" content= "" />
 </head>
-<body>
+<body class="<?=htmlspecialchars($pageClass ?? '', ENT_QUOTES, 'UTF-8')?>">
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		<div class="mbl-menu">
 			<div class="mbl-close">

@@ -1,6 +1,7 @@
 <?php
 	$title="Пресс-центр";
 	$description="Пресс-центр";
+	$pageClass="page-press page-inner";
 	
 	include("header.php");
 ?>

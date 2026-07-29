@@ -1,6 +1,7 @@
 <?php
 	$title="Скелет бизнеса: модель тигра";
 	$description="Скелет бизнеса: модель тигра";
+	$pageClass="page-home";
 	
 	include("header.php"); 
 ?>

@@ -1,6 +1,7 @@
 <?php
 	$title="Наши продукты";
 	$description="Наши продукты";
+	$pageClass="page-products page-inner";
 	
 	include("header.php"); 
 ?>
@@ -9,7 +10,7 @@
 		<div class="col-md-12 prd-row">
 			<div class="col-md-6 prd-blk-wth-1">
 				<div class="col-md-4 prd-img-1">
-					<img src="images/product_1.svg" alt="" title="" />
+					<img src="images/product_1.svg" alt="Набор карточек «Скелет бизнеса: модель тигра»" />
 				</div>
 				<div class="col-md-8 prd-text">
 					<div class="col-md-12 prd-p">
@@ -19,13 +20,13 @@
 						СТОИМОСТЬ:
 					</div>
 					<div class="col-md-12 prd-btn-blk">
-						<button class="btn-prd">Купить</button>
+						<a class="btn-prd" href="/contacts">Купить</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-6 prd-blk-wth-2">
 				<div class="col-md-4 prd-img-2">
-					<img src="images/product_2.svg" alt="" title="" />
+					<img src="images/product_2.svg" alt="Бизнес-игра" />
 				</div>
 				<div class="col-md-8 prd-text">
 					<div class="col-md-12 prd-p-2">
@@ -35,7 +36,7 @@
 						СТОИМОСТЬ:
 					</div>
 					<div class="col-md-12 prd-btn-blk">
-						<button class="btn-prd">Купить</button>
+						<a class="btn-prd" href="/contacts">Купить</a>
 					</div>
 				</div>
 			</div>
