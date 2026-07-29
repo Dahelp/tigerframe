@@ -20,7 +20,7 @@
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		<div class="mbl-menu">
 			<div class="mbl-close">
-				<div class="mbl-cl-icon"><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><i class="fal fa-times"></i></button></div>
+				<div class="mbl-cl-icon"><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Закрыть меню"><i class="fal fa-times" aria-hidden="true"></i></button></div>
 			</div>
 			<div class="mbl-info">
 				<ul>
@@ -52,7 +52,7 @@
 					<div class="col-md-1 cart"><img src="images/cart.svg" alt="Корзина" /></div>
 					<div class="burgers">
 						<nav class="navbar navbar-expand-lg navbar-light">																	
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Открыть меню">
 								<span class="navbar-toggler-icon"></span>
 							</button>							
 						</nav>

@@ -14,7 +14,7 @@
 			<div class="col-md-12 skb-marquee">
 				<div class='marquee' style='overflow:hidden'>БЕЗ СКЕЛЕТА ДОЛГО НЕ ЖИВУТ БИЗНЕСЫ МАСШТАБНЕЕ ИЛИ СЛОЖНЕЕ, ЧЕМ ПЕРВОБЫТНОЕ ПЛЕМЯ</div>
 			</div>
-			<div class="corp_men_blk">
+			<div id="corporate-governance" class="corp_men_blk">
 				<div class="corp-main">
 					<h2>КОРПОРАТИВНОЕ УПРАВЛЕНИЕ</h2>
 					<p>Несущая конструкция системы управления и риск-менеджмента бизнеса</p>
@@ -24,9 +24,9 @@
 						<div class="accordion accordion-flush" id="accordionFlushExample">
 						  <div id="flush-collapse" class="accordion-item">
 							<h2 class="accordion-header" id="flush-headingOne">
-							  <a class="accordion-button btn-corp-brw flush-collapse-0" type="button" data-id="0" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+							  <button class="accordion-button btn-corp-brw flush-collapse-0" type="button" data-id="0" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
 								ФУНКЦИОНАЛЬНЫЕ ЭЛЕМЕНТЫ
-							  </a>
+							  </button>
 							</h2>
 							<!-- One-0 -->
 							<div id="collapse-mbl-0" class="collapse-mbl">
@@ -122,9 +122,9 @@
 						  </div>
 						  <div class="accordion-item">
 							<h2 class="accordion-header" id="flush-headingTwo">
-							  <a class="accordion-button collapsed btn-corp-brw flush-collapse-6" type="button" data-id="6" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+							  <button class="accordion-button collapsed btn-corp-brw flush-collapse-6" type="button" data-id="6" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
 								ДОКУМЕНТИРОВАНИЕ
-							  </a>
+							  </button>
 							</h2>
 							<!-- One-6 -->
 							<div id="collapse-mbl-6" class="collapse-mbl" style="display:none">
@@ -214,9 +214,9 @@
 						  </div>
 						  <div class="accordion-item">
 							<h2 class="accordion-header" id="flush-headingThree">
-							  <a class="accordion-button collapsed btn-corp-brw flush-collapse-11" type="button" data-id="11" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+							  <button class="accordion-button collapsed btn-corp-brw flush-collapse-11" type="button" data-id="11" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
 								СТРУКТУРНЫЕ ЭЛЕМЕНТЫ
-							  </a>
+							  </button>
 							</h2>
 							<!-- One-11 -->
 							<div id="collapse-mbl-11" class="collapse-mbl" style="display:none">
