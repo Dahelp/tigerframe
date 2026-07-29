@@ -9,10 +9,10 @@
 	<div class="col-md-12 content">
 		<div class="col-md-12 rld-h1"><h1>КОНТАКТЫ</h1></div>
 		<div class="col-md-12 rld-row">
-			<div class="contact">
-			<p>Телефон для связи: +7 (926) 924 24–00<br />
-E-mail: model@tigerframe.biz</p>
-		</div>
+			<address class="contact">
+				<p>Телефон для связи: <a href="tel:+79269242400">+7 (926) 924 24–00</a><br />
+				E-mail: <a href="mailto:model@tigerframe.biz">model@tigerframe.biz</a></p>
+			</address>
 		</div>
 				
 	</div>

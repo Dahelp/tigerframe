@@ -2117,3 +2117,81 @@ img {
 		max-width: 300px;
 	}
 }
+
+/* Contacts page */
+.page-inner.page-contacts .content-main {
+	width: 100%;
+}
+
+.page-inner.page-contacts .content {
+	width: 100%;
+	min-height: 440px;
+	padding: clamp(92px,7.8vw,112px) 0 76px;
+}
+
+.page-inner.page-contacts .rld-h1 h1 {
+	margin: 0;
+	padding: 0 0 54px;
+	font-size: clamp(36px,3vw,42px);
+	line-height: 1.12;
+	letter-spacing: -.025em;
+}
+
+.page-inner.page-contacts .rld-row {
+	display: block;
+	padding: 0;
+}
+
+.page-inner.page-contacts .contact {
+	margin: 0;
+	padding: 0;
+	font-size: clamp(18px,1.4vw,20px);
+	font-style: normal;
+	line-height: 1.5;
+}
+
+.page-inner.page-contacts .contact p {
+	margin: 0;
+	padding: 0;
+}
+
+.page-inner.page-contacts .contact a {
+	color: inherit;
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	text-underline-offset: 4px;
+	transition: color .2s ease,text-decoration-color .2s ease;
+}
+
+.page-inner.page-contacts .contact a:hover {
+	color: #7b5b43;
+	text-decoration-color: currentColor;
+}
+
+.page-inner.page-contacts .contact a:focus-visible {
+	outline: 3px solid rgba(163,118,77,.45);
+	outline-offset: 4px;
+	border-radius: 3px;
+}
+
+@media only screen and (max-width: 901px) {
+	.page-inner.page-contacts .content {
+		min-height: 390px;
+		padding: 70px 20px 64px;
+	}
+
+	.page-inner.page-contacts .rld-h1 h1 {
+		padding-bottom: 40px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.page-inner.page-contacts .content {
+		min-height: 360px;
+		padding-top: 58px;
+	}
+
+	.page-inner.page-contacts .rld-h1 h1 {
+		font-size: 34px;
+	}
+}
