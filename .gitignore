@@ -1,0 +1,19 @@
+.env
+.env.*
+!.env.example
+
+*.log
+*.tmp
+*.bak
+
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+.agents/
+.codex/
+
+# The site uses the bundled Font Awesome CSS and webfonts, not thousands of
+# individual source SVG files.
+plugins/fontawesome-free/svgs/
