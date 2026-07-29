@@ -583,18 +583,10 @@ img {
 	z-index: 0;
 	pointer-events: none;
 	background-image:
-		url("../images/ellipse_13.svg"),
-		url("../images/ellipse_14.svg"),
-		url("../images/ellipse_15.svg");
+		radial-gradient(circle 957px at calc(50% - 212px) 536px,#e8d1a5 0,rgba(232,209,165,0) 100%),
+		radial-gradient(circle 957px at calc(50% + 212px) 2151px,#e8d1a5 0,rgba(232,209,165,0) 100%),
+		radial-gradient(circle 957px at calc(50% - 675px) 3960px,#e8d1a5 0,rgba(232,209,165,0) 100%);
 	background-repeat: no-repeat;
-	background-position:
-		center top,
-		right 1194px,
-		calc(50% - 1171px) 3003px;
-	background-size:
-		1420px 1493px,
-		1420px 1914px,
-		1420px 1727px;
 }
 
 .page-home .container-main {
@@ -624,7 +616,7 @@ img {
 
 .page-home .sbmt_img {
 	position: absolute;
-	z-index: -1;
+	z-index: 0;
 	width: min(75.42vw,1071px);
 	height: min(54.15vw,769px);
 	margin: clamp(70px,8.3vw,118px) 0 0 clamp(-17px,-1.2vw,-8px);
@@ -842,6 +834,20 @@ img {
 .page-home .corp-blk .committees_img {width:200px;height:220px;}
 .page-home .corp-blk .ku_img {width:250px;height:390px;}
 .page-home .corp-blk .internal_organs_img {width:260px;height:220px;}
+.page-home .corp-blk .blood_img {transform:scale(1.15);}
+.page-home .corp-blk .paw_img,
+.page-home .corp-blk .bone_img,
+.page-home .corp-blk .nervous_system_img {transform:scale(1.35);}
+.page-home .corp-blk .ku_img {transform:translateY(55px) scale(1.6);}
+.page-home .corp-blk .internal_organs_img {transform:scale(1.05);}
+.page-home .corp-blk .blood_img,
+.page-home .corp-blk .paw_img,
+.page-home .corp-blk .bone_img,
+.page-home .corp-blk .nervous_system_img,
+.page-home .corp-blk .ku_img,
+.page-home .corp-blk .internal_organs_img {
+	transform-origin: center;
+}
 .page-home .corp-blk .k_u_img {
 	width: min(100%,647px);
 	height: 356px;
