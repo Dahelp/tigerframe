@@ -9,7 +9,7 @@
 				<div class="sbmt_img"></div>		
 				<div class="sbmt_h1"><h1>Скелет бизнеса: модель тигра</h1></div>
 				<div class="sbmt_p">Скелет бизнеса приносит пользу и дает устойчивость компаниям любого размера</div>
-				<div class="sbmt_btn"><a href="" class="btn-sbmt">Принять участие в игре</a></div>
+				<div class="sbmt_btn"><a href="/business-games" class="btn-sbmt">Принять участие в игре</a></div>
 			</div>			
 			<div class="col-md-12 skb-marquee">
 				<div class='marquee' style='overflow:hidden'>БЕЗ СКЕЛЕТА ДОЛГО НЕ ЖИВУТ БИЗНЕСЫ МАСШТАБНЕЕ ИЛИ СЛОЖНЕЕ, ЧЕМ ПЕРВОБЫТНОЕ ПЛЕМЯ</div>
