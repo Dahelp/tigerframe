@@ -13,15 +13,29 @@ $(document).ready(function(){
 		});
 		
 	}else{ //default setup
-		$('#collapse-0').show();
+		const showDesktopPanel = function(id) {
+			const $panel = $('#collapse-' + id);
+			$panel.siblings('div').hide();
+			$panel.css('display', $panel.children().length > 1 ? 'grid' : 'block').show();
+		};
+
+		showDesktopPanel(0);
 		$('#collapse-0').siblings('div').hide();
 		$('#collapse-mbl-0').hide();
+
+		$('#accordionFlushExample .btn-corp-brw').each(function(){
+			$(this).click(function(){
+				const id = $(this).data('id');
+				$('#accordionFlushExample li').removeClass('active');
+				showDesktopPanel(id);
+			});
+		});
+
 		$('#accordionFlushExample a').each(function(){
 			$(this).click(function(){
 				$(this).parent('li').addClass("active");
 				$(this).parent('li').siblings('li').removeClass('active');
-				$('#collapse-'+$(this).data("id")).css('display','flex').show();
-				$('#collapse-'+$(this).data("id")).siblings('div').hide();
+				showDesktopPanel($(this).data("id"));
 				return false;
 			});
 		});	
