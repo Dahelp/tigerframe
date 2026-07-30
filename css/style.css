@@ -623,6 +623,7 @@ img {
 	background-repeat: no-repeat;
 	background-size: contain;
 	mix-blend-mode: multiply;
+	visibility: visible;
 }
 
 .page-home .hero-organ--top {
@@ -631,8 +632,8 @@ img {
 	width: 150px;
 	height: 125px;
 	background-image: url("../images/internal_organs.svg");
-	opacity: .22;
-	filter: blur(6px) grayscale(.35) sepia(.55) saturate(.7);
+	opacity: .48;
+	filter: blur(3px) grayscale(.2) sepia(.45) saturate(.85);
 	transform: rotate(22deg) scale(.86);
 }
 
@@ -642,8 +643,8 @@ img {
 	width: 190px;
 	height: 156px;
 	background-image: url("../images/internal_organs.svg");
-	opacity: .28;
-	filter: blur(6px) grayscale(.35) sepia(.55) saturate(.7);
+	opacity: .52;
+	filter: blur(3px) grayscale(.2) sepia(.45) saturate(.85);
 	transform: rotate(-18deg);
 }
 
@@ -653,8 +654,8 @@ img {
 	width: 180px;
 	height: 150px;
 	background-image: url("../images/internal_organs.svg");
-	opacity: .24;
-	filter: blur(6px) grayscale(.35) sepia(.55) saturate(.7);
+	opacity: .48;
+	filter: blur(3px) grayscale(.2) sepia(.45) saturate(.85);
 	transform: rotate(14deg) scale(.9);
 }
 
@@ -1335,8 +1336,8 @@ img {
 		left: -8px;
 		width: 92px;
 		height: 76px;
-		opacity: .17;
-		filter: blur(6px) grayscale(.35) sepia(.5) saturate(.65);
+		opacity: .42;
+		filter: blur(3px) grayscale(.2) sepia(.45) saturate(.85);
 	}
 
 	.page-home .hero-organ--middle {
@@ -1344,8 +1345,8 @@ img {
 		left: -28px;
 		width: 116px;
 		height: 96px;
-		opacity: .22;
-		filter: blur(6px) grayscale(.35) sepia(.55) saturate(.7);
+		opacity: .48;
+		filter: blur(3px) grayscale(.2) sepia(.45) saturate(.85);
 	}
 
 	.page-home .hero-organ--bottom {
@@ -1353,8 +1354,8 @@ img {
 		left: -12px;
 		width: 104px;
 		height: 86px;
-		opacity: .18;
-		filter: blur(6px) grayscale(.25) sepia(.5) saturate(.7);
+		opacity: .42;
+		filter: blur(3px) grayscale(.2) sepia(.45) saturate(.85);
 	}
 
 	.page-home .sbmt_h1 {
