@@ -6,9 +6,8 @@
 	include("header.php"); 
 ?>
 			<div class="sbmt_blk">
-				<div class="hero-organ hero-organ--top" aria-hidden="true"></div>
-				<div class="hero-organ hero-organ--middle" aria-hidden="true"></div>
-				<div class="hero-organ hero-organ--bottom" aria-hidden="true"></div>
+				<div class="hero-decor hero-decor--jellyfish" aria-hidden="true"></div>
+				<div class="hero-decor hero-decor--brain" aria-hidden="true"></div>
 				<div class="sbmt_img"></div>		
 				<div class="sbmt_h1"><h1>Скелет бизнеса: модель тигра</h1></div>
 				<div class="sbmt_p">Скелет бизнеса приносит пользу и дает устойчивость компаниям любого размера</div>
