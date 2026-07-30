@@ -1538,10 +1538,10 @@ img {
 
 	.page-home .sbmt_img {
 		width: calc(100% + 36px);
-		height: clamp(270px,67vw,320px);
+		height: clamp(235px,61vw,290px);
 		margin: 0 -18px;
-		background-size: 135% auto;
-		background-position: 12% -24px;
+		background-size: 115% auto;
+		background-position: 14% -10px;
 	}
 
 	.page-home .sbmt_p {
@@ -1935,14 +1935,15 @@ img {
 	}
 
 	.page-products .prd-img-1 {
-		height: 240px;
-		padding: 16px 12px 0;
+		height: 290px;
+		padding: 10px 12px 0;
 	}
 
 	.page-products .prd-img-1 img {
-		width: 136%;
+		width: 148%;
 		max-width: none;
-		max-height: 230px;
+		max-height: 280px;
+		transform: translateX(8%);
 	}
 
 	.page-products .prd-img-2 img {
