@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.bundle.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style.css?v=<?= filemtime(__DIR__ . '/css/style.css') ?>" />
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<script src="js/swiper-bundle.min.js"></script>
 	<title><?=$title?></title>
