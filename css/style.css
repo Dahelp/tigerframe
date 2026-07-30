@@ -615,39 +615,47 @@ img {
 	min-height: clamp(600px,51.4vw,730px);
 }
 
-.page-home .sbmt_blk::before,
-.page-home .sbmt_blk::after {
-	content: "";
+.page-home .hero-organ {
 	position: absolute;
 	z-index: 3;
 	pointer-events: none;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	opacity: .2;
-	filter: blur(13px) sepia(.28);
+	mix-blend-mode: multiply;
 }
 
-.page-home .sbmt_blk::before {
-	top: 215px;
-	left: 92px;
-	width: 205px;
-	height: 205px;
+.page-home .hero-organ--top {
+	top: 55px;
+	left: 125px;
+	width: 150px;
+	height: 125px;
 	background-image: url("../images/internal_organs.svg");
-	opacity: .26;
-	filter: blur(8px) grayscale(.35) sepia(.55) saturate(.65);
+	opacity: .22;
+	filter: blur(6px) grayscale(.35) sepia(.55) saturate(.7);
+	transform: rotate(22deg) scale(.86);
+}
+
+.page-home .hero-organ--middle {
+	top: 258px;
+	left: 65px;
+	width: 190px;
+	height: 156px;
+	background-image: url("../images/internal_organs.svg");
+	opacity: .28;
+	filter: blur(6px) grayscale(.35) sepia(.55) saturate(.7);
 	transform: rotate(-18deg);
 }
 
-.page-home .sbmt_blk::after {
-	top: 155px;
-	left: 475px;
-	width: 178px;
-	height: 145px;
-	background-image: url("../images/brain.svg");
-	opacity: .14;
-	filter: blur(16px) sepia(.35);
-	transform: rotate(12deg);
+.page-home .hero-organ--bottom {
+	top: 475px;
+	left: 75px;
+	width: 180px;
+	height: 150px;
+	background-image: url("../images/internal_organs.svg");
+	opacity: .24;
+	filter: blur(6px) grayscale(.35) sepia(.55) saturate(.7);
+	transform: rotate(14deg) scale(.9);
 }
 
 .page-home .sbmt_img {
@@ -1322,23 +1330,31 @@ img {
 		background-position: center;
 	}
 
-	.page-home .sbmt_blk::before {
-		top: 118px;
-		left: -24px;
-		width: 132px;
-		height: 132px;
-		opacity: .16;
-		filter: blur(10px) sepia(.28);
+	.page-home .hero-organ--top {
+		top: 28px;
+		left: -8px;
+		width: 92px;
+		height: 76px;
+		opacity: .17;
+		filter: blur(6px) grayscale(.35) sepia(.5) saturate(.65);
 	}
 
-	.page-home .sbmt_blk::after {
-		top: 92px;
-		right: -30px;
-		left: auto;
-		width: 118px;
+	.page-home .hero-organ--middle {
+		top: 132px;
+		left: -28px;
+		width: 116px;
 		height: 96px;
-		opacity: .11;
-		filter: blur(12px) sepia(.35);
+		opacity: .22;
+		filter: blur(6px) grayscale(.35) sepia(.55) saturate(.7);
+	}
+
+	.page-home .hero-organ--bottom {
+		top: 270px;
+		left: -12px;
+		width: 104px;
+		height: 86px;
+		opacity: .18;
+		filter: blur(6px) grayscale(.25) sepia(.5) saturate(.7);
 	}
 
 	.page-home .sbmt_h1 {
