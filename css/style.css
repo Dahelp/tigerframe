@@ -1312,12 +1312,12 @@ img {
 		position: relative;
 		order: 1;
 		z-index: 0;
-		width: 136%;
-		height: auto;
-		aspect-ratio: 1.37;
-		margin: 0 -18%;
-		background-size: contain;
-		background-position: center;
+		width: calc(100% + 36px);
+		height: clamp(320px,78vw,380px);
+		aspect-ratio: auto;
+		margin: 0 -18px;
+		background-size: 172% auto;
+		background-position: 18% -48px;
 	}
 
 	.page-home .hero-decor--jellyfish {
@@ -1340,7 +1340,7 @@ img {
 
 	.page-home .sbmt_h1 {
 		order: 2;
-		margin-top: 34px;
+		margin-top: 20px;
 		padding-inline: 0;
 	}
 
@@ -1360,7 +1360,7 @@ img {
 
 	.page-home .corp_men_blk {
 		min-height: 0;
-		padding: 58px 18px 62px;
+		padding: 44px 18px 48px;
 	}
 
 	.page-home .corp_men_blk > .corp-main {
@@ -1374,7 +1374,7 @@ img {
 
 	.page-home .corp-inner {
 		display: block;
-		padding-top: 40px;
+		padding-top: 26px;
 	}
 
 	.page-home .corp-inner .mbl-blk {
@@ -1382,16 +1382,16 @@ img {
 	}
 
 	.page-home .collapse-mbl {
-		padding: 8px 0 20px;
+		padding: 6px 0 14px;
 	}
 
 	.page-home .collapse-mbl .corp-main {
-		padding: 22px 10px;
+		padding: 16px 10px 18px;
 		text-align: center;
 	}
 
 	.page-home .instr-blk {
-		padding: 58px 20px 64px;
+		padding: 58px 20px 24px;
 	}
 
 	.page-home .instr-blk::before {
@@ -1424,12 +1424,12 @@ img {
 	}
 
 	.page-home .authors-corp {
-		padding-top: 38px;
+		padding-top: 24px;
 	}
 
 	.page-home .authors-corp-inner {
 		grid-template-columns: 1fr;
-		gap: 28px;
+		gap: 20px;
 	}
 
 	.page-home .authors-corp-main {
@@ -1441,7 +1441,7 @@ img {
 	}
 
 	.page-home .bis-cont {
-		padding: 62px 20px 68px;
+		padding: 24px 20px 42px;
 	}
 
 	.page-home .bis-inner,
@@ -1463,7 +1463,7 @@ img {
 	}
 
 	.page-home .bis-prv {
-		padding-top: 52px;
+		padding-top: 36px;
 	}
 
 	.page-home .swiper-slide {
@@ -1500,8 +1500,136 @@ img {
 }
 
 @media only screen and (max-width: 480px) {
+	.navbar-toggler {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 6px !important;
+	}
+
+	.navbar-toggler-icon {
+		position: relative;
+		width: 32px;
+		height: 24px;
+		border-top: 2px solid #684d39;
+		border-bottom: 2px solid #684d39;
+		background: none !important;
+	}
+
+	.navbar-toggler-icon::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 0;
+		left: 0;
+		height: 2px;
+		background: #684d39;
+		transform: translateY(-50%);
+	}
+
 	.page-home .sbmt_h1 h1 {
 		font-size: clamp(40px,12vw,52px);
+	}
+
+	.page-home .sbmt_blk {
+		padding-top: 12px;
+		padding-bottom: 36px;
+	}
+
+	.page-home .sbmt_img {
+		width: calc(100% + 36px);
+		height: clamp(310px,77vw,370px);
+		margin: 0 -18px;
+		background-size: 178% auto;
+		background-position: 18% -48px;
+	}
+
+	.page-home .sbmt_p {
+		padding: 18px 4px;
+	}
+
+	.page-home .btn-corp-brw {
+		min-height: 45px;
+		padding: 10px 28px;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+
+	.page-home .btn-corp-wht,
+	.page-home .wht-big {
+		min-height: 45px;
+		padding: 9px 28px;
+		font-size: 18px;
+		line-height: 1.25;
+	}
+
+	.page-home li.active > .btn-corp-wht {
+		font-size: 19px;
+		font-weight: 700;
+	}
+
+	.page-home .collapse-mbl .blood_img {
+		width: 250px;
+		height: 218px;
+		margin: 0 auto;
+		background-position: center top;
+		background-size: 250px auto;
+	}
+
+	.page-home .collapse-mbl .corp-blk-text p:last-child {
+		display: none;
+	}
+
+	.page-home .collapse-mbl .corp-blk-h3 h3 {
+		margin-bottom: 8px;
+		font-size: 24px;
+		line-height: 1.15;
+	}
+
+	.page-home .collapse-mbl .corp-blk-text {
+		padding-top: 18px;
+		font-size: 18px;
+		line-height: 1.35;
+	}
+
+	.page-home .bis-text {
+		width: 100%;
+		max-width: 360px;
+		margin-inline: auto;
+		padding-top: 22px;
+		text-align: center;
+	}
+
+	.page-home .bis-btn-blk {
+		width: 225px !important;
+		max-width: 225px !important;
+		margin-inline: auto;
+		gap: 14px;
+		padding-top: 24px;
+	}
+
+	.page-home .bis-btn-blk > [class*="col-"],
+	.page-home a.bis_btn,
+	.page-home a.bis_btn_outline {
+		width: 225px !important;
+		max-width: 225px;
+	}
+
+	.page-home .bis-prv {
+		max-width: 360px;
+		margin-inline: auto;
+		padding-top: 48px;
+		text-align: center;
+	}
+
+	.page-home .bis-inner {
+		text-align: center;
+	}
+
+	.page-home .swiper-cont {
+		margin-top: 24px;
 	}
 
 	.page-home .corp-main h2,

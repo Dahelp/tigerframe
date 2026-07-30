@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	const desktopBreakpoint = 902;
-	let activePanelId = 0;
+	let activePanelId = 1;
 	let desktopMode = window.innerWidth >= desktopBreakpoint;
 	let resizeTimer;
 
