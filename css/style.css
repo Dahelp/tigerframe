@@ -1538,10 +1538,10 @@ img {
 
 	.page-home .sbmt_img {
 		width: calc(100% + 36px);
-		height: clamp(300px,72vw,345px);
+		height: clamp(270px,67vw,320px);
 		margin: 0 -18px;
-		background-size: 155% auto;
-		background-position: 11% -38px;
+		background-size: 135% auto;
+		background-position: 12% -24px;
 	}
 
 	.page-home .sbmt_p {
